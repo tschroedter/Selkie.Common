@@ -13,10 +13,11 @@ The project started as a little ant colony optimization application. Over time t
 
 # Selkie projects:
 
+* [Selkie](https://github.com/tschroedter/Selkie)
 * Selkie ACO
 * [Selkie Common](https://github.com/tschroedter/Selkie.Common)
 * [Selkie EasyNetQ](https://github.com/tschroedter/Selkie.EasyNetQ)
-* [Selkie Geometry](https://github.com/tschroedter/Selkie.Geometry)
+* [Selkie Geometry] (https://github.com/tschroedter/Selkie.Geometry)
 * [Selkie NUnit Extensions](https://github.com/tschroedter/Selkie.NUnit.Extensions)
 * Selkie Racetrack
 * Selkie Services ACO
@@ -28,3 +29,4 @@ The project started as a little ant colony optimization application. Over time t
 * [Selkie Windsor](https://github.com/tschroedter/Selkie.Windsor)
 * Selkie WPF
 * [Selkie XUnit Extensions](https://github.com/tschroedter/Selkie.XUnit.Extensions)
+
