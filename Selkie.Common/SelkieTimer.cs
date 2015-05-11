@@ -24,16 +24,17 @@ namespace Selkie.Common
         }
 
         public void Initialize(TimerCallback callback,
-                               int dueTime,
-                               int period)
+                               int dueTimeInMs,
+                               int periodInMs)
 
         {
             AutoResetEvent autoEvent = new AutoResetEvent(false);
 
             m_Timer = new Timer(callback,
                                 autoEvent,
-                                dueTime,
-                                period);
+                                dueTimeInMs,
+                                periodInMs);
+
             m_Disposer.AddResource(() => m_Timer.Dispose());
         }
     }

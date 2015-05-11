@@ -8,5 +8,7 @@ namespace Selkie.Common
 
         [CanBeNull]
         string ReadLine();
+
+        void WriteLine(string format, params object[] args);
     }
 }

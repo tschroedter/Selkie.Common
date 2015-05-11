@@ -9,6 +9,14 @@ namespace Selkie.Common
     //ncrunch: no coverage start
     public class SelkieConsole : ISelkieConsole
     {
+        public void WriteLine(string format, params object[] args)
+        {
+            var text = string.Format(format,
+                                     args);
+
+            WriteLine(text);
+        }
+
         public void WriteLine(string text)
         {
             Console.WriteLine(text);

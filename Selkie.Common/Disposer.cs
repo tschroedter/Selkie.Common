@@ -72,7 +72,8 @@ namespace Selkie.Common
             if ( m_IsDisposed )
             {
                 throw new ObjectDisposedException(OwnerName,
-                                                  "The attempted operation can no longer be performed, this object has been disposed.");
+                                                  "The attempted operation can no longer be performed, " +
+                                                  "this object has been disposed.");
             }
         }
 
@@ -118,10 +119,9 @@ namespace Selkie.Common
 
         private void Push([NotNull] Action disposeAction)
         {
-            //VerifyNotDisposed();
             if ( m_IsDisposed )
             {
-                disposeAction(); //If we are already disposed then dispose now.
+                disposeAction();
             }
             else
             {
@@ -132,6 +132,4 @@ namespace Selkie.Common
             }
         }
     }
-
-    //ncrunch: no coverage end
 }
