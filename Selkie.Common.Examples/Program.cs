@@ -14,6 +14,8 @@ namespace Selkie.Common.Examples
             var randomExample = new SelkieRandomExample();
             var dateTimeExample = new SelkieDateTimeExample();
             var consoleExample = new SelkieConsoleExample();
+            var disposerExample = new DisposerExample();
+            disposerExample.Dispose();
 
             Console.ReadLine();
         }
