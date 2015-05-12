@@ -25,7 +25,7 @@ public SelkieDateTimeExample()
 	Console.WriteLine("DateTime.Now = {0}",
 					  dateTime.Now);
 }
-``
+```
 
 SelkieRandomExample
 ```CS
