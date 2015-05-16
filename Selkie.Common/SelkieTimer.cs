@@ -6,8 +6,9 @@ using Selkie.Windsor;
 namespace Selkie.Common
 {
     [ProjectComponent(Lifestyle.Transient)]
-    public sealed class SelkieTimer : ITimer,
-                                      IDisposable
+    public sealed class SelkieTimer
+        : ITimer,
+          IDisposable
     {
         private readonly Disposer m_Disposer;
         private Timer m_Timer;
@@ -28,7 +29,7 @@ namespace Selkie.Common
                                int periodInMs)
 
         {
-            AutoResetEvent autoEvent = new AutoResetEvent(false);
+            var autoEvent = new AutoResetEvent(false);
 
             m_Timer = new Timer(callback,
                                 autoEvent,

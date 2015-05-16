@@ -11,9 +11,9 @@ namespace Selkie.Common.Examples
         {
             var random = new SelkieRandom();
 
-            for ( int i = 0 ; i < 10 ; i++ )
+            for ( var i = 0 ; i < 10 ; i++ )
             {
-                var number = random.Next(1,
+                int number = random.Next(1,
                                          10);
 
                 Console.WriteLine("Random numer {0}...",

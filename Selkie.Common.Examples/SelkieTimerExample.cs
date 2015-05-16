@@ -7,10 +7,9 @@ namespace Selkie.Common.Examples
     //ncrunch: no coverage start
     public sealed class SelkieTimerExample : IDisposable
     {
-        private readonly SelkieTimer m_Timer;
         private readonly int m_DueTimeInMs = 5000;
         private readonly int m_PeriodTimeInMs = 2000;
-
+        private readonly SelkieTimer m_Timer;
         private int m_Counter;
 
         public SelkieTimerExample()

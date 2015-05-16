@@ -2,13 +2,14 @@
 using System.Diagnostics.CodeAnalysis;
 
 // ReSharper disable UnusedVariable
+
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
     //ncrunch: no coverage start
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             var timerExample = new SelkieTimerExample();
             var randomExample = new SelkieRandomExample();

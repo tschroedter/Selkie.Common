@@ -12,8 +12,9 @@ namespace Selkie.Common
     [ProjectComponent(Lifestyle.Transient)]
     [ExcludeFromCodeCoverage]
     //ncrunch: no coverage start
-    public sealed class Disposer : IDisposer,
-                                   IDisposable
+    public sealed class Disposer
+        : IDisposer,
+          IDisposable
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly Stack <Action> m_DisposeActions;
@@ -37,8 +38,7 @@ namespace Selkie.Common
             {
                 return m_Owner == null
                            ? "Unknown Object"
-                           : m_Owner.GetType()
-                                    .Name;
+                           : m_Owner.GetType().Name;
             }
         }
 
