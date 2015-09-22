@@ -101,8 +101,8 @@ namespace Selkie.Common
                 }
                 catch ( Exception exception )
                 {
-                    Logger.Error("Failed to execute a disposal action",
-                                 exception);
+                    Logger.Error(exception,
+                                 "Failed to execute a disposal action");
 
                     if ( disposeException == null )
                     {
