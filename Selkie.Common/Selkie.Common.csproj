@@ -72,6 +72,7 @@
     <Compile Include="ITimer.cs" />
     <Compile Include="SelkieConsole.cs" />
     <Compile Include="SelkieDateTime.cs" />
+    <Compile Include="SelkieInstaller.cs" />
     <Compile Include="SelkieRandom.cs" />
     <Compile Include="SelkieTimer.cs" />
     <Compile Include="Constants.cs" />

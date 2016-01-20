@@ -1,12 +1,6 @@
-﻿using Selkie.Windsor;
-
-namespace Selkie.Common
+﻿namespace Selkie.Common
 {
-    public class Installer : BaseInstaller <Installer>
+    public class Installer : SelkieInstaller <Installer>
     {
-        public override string GetPrefixOfDllsToInstall()
-        {
-            return "Selkie.";
-        }
     }
 }
