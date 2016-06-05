@@ -4,11 +4,8 @@ using System.Diagnostics.CodeAnalysis;
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public sealed class DisposerExample : IDisposable
     {
-        private readonly Disposer m_Disposer;
-
         public DisposerExample()
         {
             m_Disposer = new Disposer();
@@ -19,12 +16,14 @@ namespace Selkie.Common.Examples
             m_Disposer.AddResource(ShowMessage);
         }
 
+        private readonly Disposer m_Disposer;
+
         public void Dispose()
         {
             m_Disposer.Dispose();
         }
 
-        public void ShowMessage()
+        private void ShowMessage()
         {
             Console.WriteLine("Disposer called me!");
         }

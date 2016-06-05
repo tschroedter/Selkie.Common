@@ -5,7 +5,6 @@ using JetBrains.Annotations;
 namespace Selkie.Common
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public static class DisposerExtensions
     {
         [CanBeNull]

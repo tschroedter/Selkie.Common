@@ -6,7 +6,6 @@ using System.Diagnostics.CodeAnalysis;
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     internal class Program
     {
         private static void Main()
@@ -16,6 +15,7 @@ namespace Selkie.Common.Examples
             var dateTimeExample = new SelkieDateTimeExample();
             var consoleExample = new SelkieConsoleExample();
             var disposerExample = new DisposerExample();
+            var environmentExample = new SelkieEnvironmentExample();
             disposerExample.Dispose();
 
             Console.ReadLine();

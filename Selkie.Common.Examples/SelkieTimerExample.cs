@@ -4,22 +4,21 @@ using System.Diagnostics.CodeAnalysis;
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public sealed class SelkieTimerExample : IDisposable
     {
-        private readonly int m_DueTimeInMs = 5000;
-        private readonly int m_PeriodTimeInMs = 2000;
-        private readonly SelkieTimer m_Timer;
-        private int m_Counter;
-
         public SelkieTimerExample()
         {
             m_Timer = new SelkieTimer();
 
             m_Timer.Initialize(OnTimmer,
-                               m_DueTimeInMs,
-                               m_PeriodTimeInMs);
+                               DueTimeInMs,
+                               PeriodTimeInMs);
         }
+
+        private const int DueTimeInMs = 5000;
+        private const int PeriodTimeInMs = 2000;
+        private readonly SelkieTimer m_Timer;
+        private int m_Counter;
 
         public void Dispose()
         {

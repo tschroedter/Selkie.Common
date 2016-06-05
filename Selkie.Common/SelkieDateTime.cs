@@ -1,4 +1,5 @@
 ﻿using System;
+using Selkie.Common.Interfaces;
 using Selkie.Windsor;
 
 namespace Selkie.Common

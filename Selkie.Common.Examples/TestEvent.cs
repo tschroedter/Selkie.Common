@@ -4,7 +4,6 @@ using System.Diagnostics.CodeAnalysis;
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     internal class TestEvent
     {
 #pragma warning disable 67

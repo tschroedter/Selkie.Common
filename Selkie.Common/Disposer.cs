@@ -5,22 +5,17 @@ using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using JetBrains.Annotations;
 using NLog;
+using Selkie.Common.Interfaces;
 using Selkie.Windsor;
 
 namespace Selkie.Common
 {
     [ProjectComponent(Lifestyle.Transient)]
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public sealed class Disposer
         : IDisposer,
           IDisposable
     {
-        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        private readonly Stack <Action> m_DisposeActions;
-        private readonly object m_Owner;
-        private volatile bool m_IsDisposed;
-
         public Disposer()
             : this(string.Empty)
         {
@@ -31,6 +26,11 @@ namespace Selkie.Common
             m_Owner = owner;
             m_DisposeActions = new Stack <Action>();
         }
+
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        private readonly Stack <Action> m_DisposeActions;
+        private readonly object m_Owner;
+        private volatile bool m_IsDisposed;
 
         public string OwnerName
         {

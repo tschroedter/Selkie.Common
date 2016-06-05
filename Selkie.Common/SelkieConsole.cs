@@ -1,12 +1,12 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
+using Selkie.Common.Interfaces;
 using Selkie.Windsor;
 
 namespace Selkie.Common
 {
     [ProjectComponent(Lifestyle.Transient)]
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public class SelkieConsole : ISelkieConsole
     {
         public void WriteLine(string format,
@@ -29,6 +29,4 @@ namespace Selkie.Common
             return Console.ReadLine();
         }
     }
-
-    //ncrunch: no coverage end
 }

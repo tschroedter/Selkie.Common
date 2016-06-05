@@ -3,7 +3,6 @@
 namespace Selkie.Common.Examples
 {
     [ExcludeFromCodeCoverage]
-    //ncrunch: no coverage start
     public sealed class SelkieConsoleExample
     {
         public SelkieConsoleExample()
