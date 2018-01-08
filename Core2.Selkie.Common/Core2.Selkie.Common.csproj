@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
+    <Description>The package contains common classes and interfaces to replace some .Net classes: IRandom, IDateTime, ITimer, ITimerFactory, IDisposer and ISelkieConsole.</Description>
+    <Copyright>Copyright © Thomas Schroedter 2017</Copyright>
+    <PackageLicenseUrl>https://github.com/tschroedter/Selkie.Common/blob/dotnetcore2/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tschroedter/Selkie.Common/tree/dotnetcore2</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/tschroedter/Selkie/blob/master/LaptopDeskPerson.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/tschroedter/Selkie.Common/tree/dotnetcore2</RepositoryUrl>
+    <PackageTags>Selkie Common Core2</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Core2.Selkie.Windsor" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
